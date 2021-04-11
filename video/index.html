@@ -1,0 +1,125 @@
+<head>
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+  <link
+  href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+  rel="stylesheet"
+/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+<style>
+body {
+  background-color: #000000;
+}
+
+.like {border-radius: 50%;}
+.like {
+  background-color: #303430;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.comments {
+    float: left;
+    color: white;
+}
+
+#follow-button {
+  color: #FFFFFF;
+  font-family: "Helvetica";
+  font-size: 10pt;
+  background-color: red;
+  border: 1px solid;
+  border-color: #FFFFFF;
+  border-radius: 3px;
+  width: 85px;
+  height: 30px;
+  position: absolute;	 
+  cursor: hand;		 
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="auto"
+    height="264"
+    poster="https://videojs.com/logo-white.png"
+    data-setup="{}"
+  >
+    <source src="https://upload.wikimedia.org/wikipedia/commons/2/27/Si_te_beheni_pjese_e_fushat%C3%ABs_%22Un%C3%AB_Redaktoj_Wikipedia-n_2021%22.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+<div style="font-size:200%; color:white">Si te beheni pjese e fushatës "Unë Redaktoj Wikipedia-n 2021"</div>
+<p style="color:white">from Wikimedia Commons.</p>
+<section>
+<img src="https://www.foodwest.fi/wp-content/uploads/2016/11/blank-profile-picture-973460_1280.png" style="border-radius:70%; width:40px; height:40px;">
+<button id="follow-button">+ Follow</button>
+</section>	
+<center>
+<div style="font-size:200%; color:white">
+1,229 likes
+</div>
+<div class="like">
+<i class="fa fa-plus"></i>
+</div>
+<div class="like">
+<i class="fa fa-minus"></i>
+</div>
+<div class="like">
+<i class="fa fa-comment"></i>
+</div>
+<div class="like">
+<i class="fa fa-flag"></i>
+</div>
+</center>
+<hr>
+<form>
+<div class="comments">
+  <div class="form-group">
+      <div style="color:white; font-size:250%">Comment area</div>
+    <label for="exampleFormControlTextarea1" style="color:white">Nickname</label>
+    <input type="name" class="form-control" id="exampleFormControlTextarea1" aria-describedby="nickname" placeholder="Enter nickname">
+    <small id="emailHelp" class="form-text text-muted" style="color:white">We'll show you your nickname when you comment.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Comment</label>
+    <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Comment">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">When I press this, I confirm that my comment is relevant.</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+</body>
